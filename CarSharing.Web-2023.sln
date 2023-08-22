@@ -5,6 +5,18 @@ VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSharing.Web", "CarSharing.Web\CarSharing.Web.csproj", "{2DB05208-4BF2-4171-A869-834E83B5DD38}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{F35CC579-CFA7-4586-A1D0-4BB556CD617E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{921A02EA-7B46-44C3-BFAE-A2234C70CA61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSharing.Data", "CarSharing.Data\CarSharing.Data.csproj", "{860B6118-18D1-437B-92E1-115891DFACB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{96C3BCE2-F6E7-416A-9B9B-84CA9C815A8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSharing.Services.Data", "CarSharing.Services.Data\CarSharing.Services.Data.csproj", "{E8EF6BDE-9E0A-48B2-9B11-046BA1879D70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSharing.Services.Mapping", "CarSharing.Services.Mapping\CarSharing.Services.Mapping.csproj", "{4B297D89-A2CD-4FB8-A4AA-69A16B69ABBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +27,27 @@ Global
 		{2DB05208-4BF2-4171-A869-834E83B5DD38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DB05208-4BF2-4171-A869-834E83B5DD38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DB05208-4BF2-4171-A869-834E83B5DD38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{860B6118-18D1-437B-92E1-115891DFACB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{860B6118-18D1-437B-92E1-115891DFACB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{860B6118-18D1-437B-92E1-115891DFACB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{860B6118-18D1-437B-92E1-115891DFACB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8EF6BDE-9E0A-48B2-9B11-046BA1879D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8EF6BDE-9E0A-48B2-9B11-046BA1879D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8EF6BDE-9E0A-48B2-9B11-046BA1879D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8EF6BDE-9E0A-48B2-9B11-046BA1879D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B297D89-A2CD-4FB8-A4AA-69A16B69ABBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B297D89-A2CD-4FB8-A4AA-69A16B69ABBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B297D89-A2CD-4FB8-A4AA-69A16B69ABBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B297D89-A2CD-4FB8-A4AA-69A16B69ABBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2DB05208-4BF2-4171-A869-834E83B5DD38} = {921A02EA-7B46-44C3-BFAE-A2234C70CA61}
+		{860B6118-18D1-437B-92E1-115891DFACB7} = {F35CC579-CFA7-4586-A1D0-4BB556CD617E}
+		{E8EF6BDE-9E0A-48B2-9B11-046BA1879D70} = {96C3BCE2-F6E7-416A-9B9B-84CA9C815A8D}
+		{4B297D89-A2CD-4FB8-A4AA-69A16B69ABBD} = {96C3BCE2-F6E7-416A-9B9B-84CA9C815A8D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A53FE62-4228-4AA2-8B28-1D0014DA71AB}
