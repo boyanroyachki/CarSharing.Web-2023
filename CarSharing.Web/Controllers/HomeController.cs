@@ -2,6 +2,7 @@
 using CarSharing.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using static CarSharing.Common.NotificationMessagesConstants;
 
 namespace CarSharing.Web.Controllers
 {
@@ -16,6 +17,7 @@ namespace CarSharing.Web.Controllers
 
         public IActionResult Index()
         {
+            this.TempData[SuccessMessage] = "Wellcome to the app.";
             return View();
         }
 

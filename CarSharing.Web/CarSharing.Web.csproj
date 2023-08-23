@@ -27,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CarSharing.Common\CarSharing.Common.csproj" />
     <ProjectReference Include="..\CarSharing.Data\CarSharing.Data.csproj" />
     <ProjectReference Include="..\CarSharing.Services.Data\CarSharing.Services.Data.csproj" />
     <ProjectReference Include="..\CarSharing.Services.Mapping\CarSharing.Services.Mapping.csproj" />
