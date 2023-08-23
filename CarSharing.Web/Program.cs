@@ -1,6 +1,8 @@
-using CarSharing.Web.Data;
+using CarSharing.Data;
+using CarSharing.Services.Data.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using static CarSharing.Web.Infrastructure.Extensions.WebApplicationBuilderExtensions;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +14,12 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
+builder.Services.AddApplicationServices(typeof(IApplicationService)); //automate all the services
+
 builder.Services.AddControllersWithViews();
+
 
 WebApplication app = builder.Build();
 

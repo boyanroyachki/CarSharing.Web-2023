@@ -1,4 +1,5 @@
-﻿using CarSharing.Web.Models;
+﻿using CarSharing.Services.Data.Interfaces;
+using CarSharing.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,19 +7,14 @@ namespace CarSharing.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IApplicationService applicationService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IApplicationService applicationService)
         {
-            _logger = logger;
+            this.applicationService = applicationService;
         }
 
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
         {
             return View();
         }

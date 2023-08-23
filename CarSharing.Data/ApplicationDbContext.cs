@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace CarSharing.Web.Data
+namespace CarSharing.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
