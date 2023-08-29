@@ -21,7 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSharing.Web.Infrastructu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{8B6CCC40-6D1C-4992-A4A9-EA3D61E0E82F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSharing.Common", "CarSharing.Common\CarSharing.Common.csproj", "{16C0DED2-5A37-4FD3-ADB3-6355A5444C57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSharing.Common", "CarSharing.Common\CarSharing.Common.csproj", "{16C0DED2-5A37-4FD3-ADB3-6355A5444C57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSharing.Data.Models", "CarSharing.Data.Models\CarSharing.Data.Models.csproj", "{4705A60A-E497-4646-8F14-49F313D43F0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSharing.Services.Data.Models", "CarSharing.Services.Data.Models\CarSharing.Services.Data.Models.csproj", "{BE96F449-DD9D-4AEC-9820-14294E01A2D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,14 @@ Global
 		{16C0DED2-5A37-4FD3-ADB3-6355A5444C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16C0DED2-5A37-4FD3-ADB3-6355A5444C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16C0DED2-5A37-4FD3-ADB3-6355A5444C57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4705A60A-E497-4646-8F14-49F313D43F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4705A60A-E497-4646-8F14-49F313D43F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4705A60A-E497-4646-8F14-49F313D43F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4705A60A-E497-4646-8F14-49F313D43F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE96F449-DD9D-4AEC-9820-14294E01A2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE96F449-DD9D-4AEC-9820-14294E01A2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE96F449-DD9D-4AEC-9820-14294E01A2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE96F449-DD9D-4AEC-9820-14294E01A2D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +76,8 @@ Global
 		{4B297D89-A2CD-4FB8-A4AA-69A16B69ABBD} = {96C3BCE2-F6E7-416A-9B9B-84CA9C815A8D}
 		{E29AA3A5-F173-4014-9E71-CECF6CFAF88D} = {921A02EA-7B46-44C3-BFAE-A2234C70CA61}
 		{16C0DED2-5A37-4FD3-ADB3-6355A5444C57} = {8B6CCC40-6D1C-4992-A4A9-EA3D61E0E82F}
+		{4705A60A-E497-4646-8F14-49F313D43F0A} = {F35CC579-CFA7-4586-A1D0-4BB556CD617E}
+		{BE96F449-DD9D-4AEC-9820-14294E01A2D4} = {96C3BCE2-F6E7-416A-9B9B-84CA9C815A8D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A53FE62-4228-4AA2-8B28-1D0014DA71AB}
