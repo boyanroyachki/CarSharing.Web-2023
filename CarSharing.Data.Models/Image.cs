@@ -4,16 +4,13 @@ namespace CarSharing.Data.Models
 {
     public class Image
     {
-        public Image()
+        public Image() //not done
         {
-            Id = Guid.NewGuid();
-            Data = new HashSet<byte>();
+            Id = Guid.NewGuid();  
         }
+
         [Key]
         public Guid Id { get; set; }
-
-        public virtual ICollection<byte> Data { get; set; } //either this
-
         public string? ImageUrl { get; set; } //or this
 
         [Required]

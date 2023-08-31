@@ -13,10 +13,10 @@ namespace CarSharing.Data.Models
         public Guid Id { get; set; }
 
         [Required]
-        public string UserName { get; set; }
+        public string UserName { get; set; } = null!;
 
         [Required]
-        public string UserId { get; set; } = null!;
+        public Guid UserId { get; set; }
 
         public virtual AppUser User { get; set; } = null!;
 
