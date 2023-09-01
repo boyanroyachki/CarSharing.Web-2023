@@ -8,16 +8,21 @@ namespace CarSharing.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IApplicationService applicationService;
+        private readonly IVehicleService vehicleService;
 
-        public HomeController(IApplicationService applicationService)
+        public HomeController(IVehicleService vehicleService)
         {
-            this.applicationService = applicationService;
+            this.vehicleService = vehicleService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             this.TempData[SuccessMessage] = "Wellcome to the app.";
+
+            if (await vehicleService.VehicleExistByIdAsync("0C8423CD-5247-4C64-8387-53FC22CE4EA0"))
+            {
+                this.TempData[WarningMessage] = "All guten joben";
+            }
             return View();
         }
 

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
+using System.Reflection.Emit;
 
 namespace CarSharing.Data
 {
@@ -13,8 +14,16 @@ namespace CarSharing.Data
         {
         }
 
+        public DbSet<Vehicle> Vehicles { get; set; } = null!;
+        public DbSet<Agent> Agents { get; set; } = null!;
+        public DbSet<Category> Categories { get; set; } = null!;
+        public DbSet<Image> Images { get; set; } = null!;
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Entity<Vehicle>().ToTable("Vehicle"); // Ensures the entity is mapped to the 'Vehicle' table
+            builder.Entity<Vehicle>().Property(v => v.PricePerHour).HasPrecision(18, 2);
+
             Assembly assembly = Assembly.GetAssembly(typeof(ApplicationDbContext)) ??
                 Assembly.GetExecutingAssembly();
 
