@@ -19,7 +19,7 @@ namespace CarSharing.Web.Controllers
         {
             this.TempData[SuccessMessage] = "Wellcome to the app.";
 
-            if (await vehicleService.VehicleExistByIdAsync("0C8423CD-5247-4C64-8387-53FC22CE4EA0"))
+            if (await vehicleService.VehicleExistByIdAsync("6C0A4AE0-837F-415D-90A1-53FFB2E2142C"))
             {
                 this.TempData[WarningMessage] = "All guten joben";
             }

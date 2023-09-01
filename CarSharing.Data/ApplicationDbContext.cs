@@ -21,7 +21,6 @@ namespace CarSharing.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.Entity<Vehicle>().ToTable("Vehicle"); // Ensures the entity is mapped to the 'Vehicle' table
             builder.Entity<Vehicle>().Property(v => v.PricePerHour).HasPrecision(18, 2);
 
             Assembly assembly = Assembly.GetAssembly(typeof(ApplicationDbContext)) ??

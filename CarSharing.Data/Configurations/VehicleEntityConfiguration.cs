@@ -42,7 +42,7 @@ namespace CarSharing.Data.Configurations
                 AgentId = Guid.Parse("41D679FE-6B8C-4818-A6DF-F99067DFCBF7")
             };
             vehicles.Add(vehicle);
-            vehicle = new Vehicle() 
+            vehicle = new Vehicle()
             {
                 Description = "The bigger brother of the F150, the Ford Raptor!",
                 Make = "Ford",
