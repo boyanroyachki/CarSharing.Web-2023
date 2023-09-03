@@ -10,6 +10,8 @@ namespace CarSharing.Data.Models
         {
             Id = Guid.NewGuid();
             ImageGalery = new HashSet<Image>(); //not done
+            IsDeleted = false;
+            IsRented = false;
         }
 
         [Key]
@@ -60,6 +62,13 @@ namespace CarSharing.Data.Models
         [Required]
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; } = null!;
+
+        [Required]
+        public bool IsDeleted { get; set; }
+
+        [Required]
+        public bool IsRented { get; set; }
+
 
 
         [Required]
