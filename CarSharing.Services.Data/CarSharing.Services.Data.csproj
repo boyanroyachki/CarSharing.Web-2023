@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CarSharing.Data\CarSharing.Data.csproj" />
+    <ProjectReference Include="..\CarSharing.Web.ViewModels\CarSharing.Web.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

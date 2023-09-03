@@ -6,15 +6,10 @@ using static CarSharing.Common.NotificationMessagesConstants;
 
 namespace CarSharing.Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private readonly IVehicleService vehicleService;
-
-        public HomeController(IVehicleService vehicleService)
-        {
-            this.vehicleService = vehicleService;
-        }
-
+        public HomeController(IVehicleService vehicleService) : base(vehicleService) { }
+        
         public async Task<IActionResult> Index()
         {
             this.TempData[SuccessMessage] = "Wellcome to the app.";

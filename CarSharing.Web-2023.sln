@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSharing.Common", "CarSha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSharing.Data.Models", "CarSharing.Data.Models\CarSharing.Data.Models.csproj", "{4705A60A-E497-4646-8F14-49F313D43F0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSharing.Services.Data.Models", "CarSharing.Services.Data.Models\CarSharing.Services.Data.Models.csproj", "{BE96F449-DD9D-4AEC-9820-14294E01A2D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSharing.Services.Data.Models", "CarSharing.Services.Data.Models\CarSharing.Services.Data.Models.csproj", "{BE96F449-DD9D-4AEC-9820-14294E01A2D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSharing.Web.ViewModels", "CarSharing.Web.ViewModels\CarSharing.Web.ViewModels.csproj", "{35373DEC-7EE9-4FD8-B809-EB8D5A364F15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{BE96F449-DD9D-4AEC-9820-14294E01A2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE96F449-DD9D-4AEC-9820-14294E01A2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE96F449-DD9D-4AEC-9820-14294E01A2D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35373DEC-7EE9-4FD8-B809-EB8D5A364F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35373DEC-7EE9-4FD8-B809-EB8D5A364F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35373DEC-7EE9-4FD8-B809-EB8D5A364F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35373DEC-7EE9-4FD8-B809-EB8D5A364F15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{16C0DED2-5A37-4FD3-ADB3-6355A5444C57} = {8B6CCC40-6D1C-4992-A4A9-EA3D61E0E82F}
 		{4705A60A-E497-4646-8F14-49F313D43F0A} = {F35CC579-CFA7-4586-A1D0-4BB556CD617E}
 		{BE96F449-DD9D-4AEC-9820-14294E01A2D4} = {96C3BCE2-F6E7-416A-9B9B-84CA9C815A8D}
+		{35373DEC-7EE9-4FD8-B809-EB8D5A364F15} = {921A02EA-7B46-44C3-BFAE-A2234C70CA61}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A53FE62-4228-4AA2-8B28-1D0014DA71AB}

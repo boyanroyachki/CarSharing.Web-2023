@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarSharing.Data.Models\CarSharing.Data.Models.csproj" />
+    <ProjectReference Include="..\CarSharing.Services.Mapping\CarSharing.Services.Mapping.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -35,9 +35,11 @@
     <ProjectReference Include="..\CarSharing.Common\CarSharing.Common.csproj" />
     <ProjectReference Include="..\CarSharing.Data.Models\CarSharing.Data.Models.csproj" />
     <ProjectReference Include="..\CarSharing.Data\CarSharing.Data.csproj" />
+    <ProjectReference Include="..\CarSharing.Services.Data.Models\CarSharing.Services.Data.Models.csproj" />
     <ProjectReference Include="..\CarSharing.Services.Data\CarSharing.Services.Data.csproj" />
     <ProjectReference Include="..\CarSharing.Services.Mapping\CarSharing.Services.Mapping.csproj" />
     <ProjectReference Include="..\CarSharing.Web.Infrastructure\CarSharing.Web.Infrastructure.csproj" />
+    <ProjectReference Include="..\CarSharing.Web.ViewModels\CarSharing.Web.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>
