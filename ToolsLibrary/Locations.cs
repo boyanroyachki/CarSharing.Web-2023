@@ -1,8 +1,5 @@
 ﻿namespace ToolsLibrary
 {
-    /// <summary>
-    /// Example: var (lat, lon) = CoordinateGenerator.GetRandomCoordinates();
-    /// </summary>
     public static class Locations
     {
         private static readonly Random _rand = new Random();

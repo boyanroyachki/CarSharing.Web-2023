@@ -33,6 +33,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{5C281ECD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsLibrary", "ToolsLibrary\ToolsLibrary.csproj", "{E9839B11-0D46-44C1-B00E-5C9DA8700C02}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Selenium", "Selenium", "{B84ED3C7-F8F1-4330-AE2A-E28B219F56E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrowserBot", "BrowserBot\BrowserBot.csproj", "{27C616C0-3004-4F3D-BC73-EC28F25702D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +83,10 @@ Global
 		{E9839B11-0D46-44C1-B00E-5C9DA8700C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9839B11-0D46-44C1-B00E-5C9DA8700C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9839B11-0D46-44C1-B00E-5C9DA8700C02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27C616C0-3004-4F3D-BC73-EC28F25702D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C616C0-3004-4F3D-BC73-EC28F25702D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C616C0-3004-4F3D-BC73-EC28F25702D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C616C0-3004-4F3D-BC73-EC28F25702D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +103,7 @@ Global
 		{35373DEC-7EE9-4FD8-B809-EB8D5A364F15} = {921A02EA-7B46-44C3-BFAE-A2234C70CA61}
 		{5C281ECD-812A-450F-B938-079D09813665} = {8B6CCC40-6D1C-4992-A4A9-EA3D61E0E82F}
 		{E9839B11-0D46-44C1-B00E-5C9DA8700C02} = {5C281ECD-812A-450F-B938-079D09813665}
+		{27C616C0-3004-4F3D-BC73-EC28F25702D4} = {B84ED3C7-F8F1-4330-AE2A-E28B219F56E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A53FE62-4228-4AA2-8B28-1D0014DA71AB}
