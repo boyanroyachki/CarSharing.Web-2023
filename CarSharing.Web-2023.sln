@@ -27,7 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSharing.Data.Models", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSharing.Services.Data.Models", "CarSharing.Services.Data.Models\CarSharing.Services.Data.Models.csproj", "{BE96F449-DD9D-4AEC-9820-14294E01A2D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSharing.Web.ViewModels", "CarSharing.Web.ViewModels\CarSharing.Web.ViewModels.csproj", "{35373DEC-7EE9-4FD8-B809-EB8D5A364F15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSharing.Web.ViewModels", "CarSharing.Web.ViewModels\CarSharing.Web.ViewModels.csproj", "{35373DEC-7EE9-4FD8-B809-EB8D5A364F15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{5C281ECD-812A-450F-B938-079D09813665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsLibrary", "ToolsLibrary\ToolsLibrary.csproj", "{E9839B11-0D46-44C1-B00E-5C9DA8700C02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +75,10 @@ Global
 		{35373DEC-7EE9-4FD8-B809-EB8D5A364F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35373DEC-7EE9-4FD8-B809-EB8D5A364F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35373DEC-7EE9-4FD8-B809-EB8D5A364F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9839B11-0D46-44C1-B00E-5C9DA8700C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9839B11-0D46-44C1-B00E-5C9DA8700C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9839B11-0D46-44C1-B00E-5C9DA8700C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9839B11-0D46-44C1-B00E-5C9DA8700C02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +93,8 @@ Global
 		{4705A60A-E497-4646-8F14-49F313D43F0A} = {F35CC579-CFA7-4586-A1D0-4BB556CD617E}
 		{BE96F449-DD9D-4AEC-9820-14294E01A2D4} = {96C3BCE2-F6E7-416A-9B9B-84CA9C815A8D}
 		{35373DEC-7EE9-4FD8-B809-EB8D5A364F15} = {921A02EA-7B46-44C3-BFAE-A2234C70CA61}
+		{5C281ECD-812A-450F-B938-079D09813665} = {8B6CCC40-6D1C-4992-A4A9-EA3D61E0E82F}
+		{E9839B11-0D46-44C1-B00E-5C9DA8700C02} = {5C281ECD-812A-450F-B938-079D09813665}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A53FE62-4228-4AA2-8B28-1D0014DA71AB}

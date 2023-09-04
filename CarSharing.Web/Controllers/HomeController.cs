@@ -3,6 +3,7 @@ using CarSharing.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using static CarSharing.Common.NotificationMessagesConstants;
+using static ToolsLibrary.Locations;
 
 namespace CarSharing.Web.Controllers
 {
@@ -12,11 +13,11 @@ namespace CarSharing.Web.Controllers
         
         public async Task<IActionResult> Index()
         {
-            this.TempData[SuccessMessage] = "Wellcome to the app.";
+            this.TempData[SuccessMessage] = GetRandomCoordinates();
 
             if (await vehicleService.VehicleExistByIdAsync("6C0A4AE0-837F-415D-90A1-53FFB2E2142C"))
             {
-                this.TempData[WarningMessage] = "All guten joben";
+                this.TempData[WarningMessage] = GetRandomCoordinates();
             }
             return View();
         }
