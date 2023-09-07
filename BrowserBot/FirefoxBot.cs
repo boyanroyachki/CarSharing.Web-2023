@@ -1,13 +1,14 @@
-﻿// Create a new instance of the Chrome driver.
+﻿// Create a new instance of the Firefox driver.
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 
 IWebDriver driver = new FirefoxDriver();
 
 driver.Navigate().GoToUrl("https://www.google.com/");
+//driver.Navigate().GoToUrl("https://chat.openai.com/c/eda0f1ba-5ccb-4fc6-bfb6-aa21b0479c1c");
 
 // Add a wait for the cookie consent to appear (consider using WebDriverWait)
-    Thread.Sleep(1000); // This is not the most efficient way; WebDriverWait is preferred.
+Thread.Sleep(100); // This is not the most efficient way; WebDriverWait is preferred.
 
 try
 {

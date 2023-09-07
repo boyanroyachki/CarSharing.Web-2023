@@ -33,6 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BrowserBot\BrowserBots.csproj" />
     <ProjectReference Include="..\CarSharing.Common\CarSharing.Common.csproj" />
     <ProjectReference Include="..\CarSharing.Data.Models\CarSharing.Data.Models.csproj" />
     <ProjectReference Include="..\CarSharing.Data\CarSharing.Data.csproj" />
