@@ -1,0 +1,11 @@
+﻿@using CarSharing.Data.Models;
+@model List<Vehicle>
+
+
+@foreach (var item in Model)
+{
+	<h1>@item.Description</h1>
+	<h1>@item.Id</h1>
+	<h1>@item.PlateNumber</h1>
+	<br />
+}

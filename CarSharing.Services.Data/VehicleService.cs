@@ -58,6 +58,12 @@ namespace CarSharing.Services.Data
             var vehicle = await this.data.Vehicles.FirstOrDefaultAsync(x => x.Id.ToString() == vehicleId);
             return vehicle;
         }
+
+        public async Task<IEnumerable<Vehicle>> GetVehiclesAsync()
+        {
+            var vehicles = await this.data.Vehicles.ToListAsync();
+            return vehicles;
+        }
         //
 
         //block 2
@@ -71,6 +77,8 @@ namespace CarSharing.Services.Data
         }
 
        
+
+
 
 
 

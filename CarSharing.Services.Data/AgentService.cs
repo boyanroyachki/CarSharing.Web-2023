@@ -1,4 +1,5 @@
 ﻿using CarSharing.Data;
+using CarSharing.Data.Models;
 using CarSharing.Services.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -21,6 +22,12 @@ namespace CarSharing.Services.Data
             var targetAgent = await this.data.Agents.FirstOrDefaultAsync(x => x.UserId.ToString() == userId);
             return targetAgent != null;
         }
-        //
-    }
+
+		public async Task<string> GetAgentIdByUserIdAsync(string userId)
+		{
+            Agent agent = await this.data.Agents.FirstOrDefaultAsync(x => x.UserId.ToString() == userId);
+            return agent.Id.ToString();
+		}
+		//
+	}
 }

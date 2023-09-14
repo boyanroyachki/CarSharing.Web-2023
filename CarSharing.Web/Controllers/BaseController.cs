@@ -8,10 +8,12 @@ namespace CarSharing.Web.Controllers
     public class BaseController : Controller
     {
         protected readonly IVehicleService vehicleService;
+        protected readonly IAgentService agentService;
 
-        public BaseController(IVehicleService vehicleService)
+        public BaseController(IVehicleService vehicleService, IAgentService agentService)
         {
             this.vehicleService = vehicleService;
+            this.agentService = agentService;
         }
     }
 }

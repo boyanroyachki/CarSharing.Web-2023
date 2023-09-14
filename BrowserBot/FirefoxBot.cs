@@ -2,6 +2,8 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 
+
+
 IWebDriver driver = new FirefoxDriver();
 
 driver.Navigate().GoToUrl("https://www.google.com/");
@@ -25,7 +27,8 @@ try
 {
     IWebElement searchBar = driver.FindElement(By.Id("APjFqb"));
     searchBar.Click();
-    searchBar.SendKeys("gmail");
+    //searchBar.SendKeys("gmail");
+   // SimulateText("gmail", searchBar);
 
     Thread.Sleep(200);
     searchBar.Submit();
@@ -44,7 +47,7 @@ try
     driver.Navigate().GoToUrl("https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser");
     IWebElement searchBar = driver.FindElement(By.Id("identifierId")); 
     searchBar.Click();
-    searchBar.SendKeys("xyz");
+    searchBar.SendKeys("elena");
     IWebElement button = driver.FindElement(By.Id("identifierNext"));
     button.Click();
 }

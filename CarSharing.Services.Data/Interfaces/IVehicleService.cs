@@ -17,6 +17,8 @@ namespace CarSharing.Services.Data.Interfaces
         Task<bool> IsVehicleRentedByIdAsync(string vehicleId);
 
         Task<bool> IsVehicleOwnedByAgentAsync(string vehicleId, string agentId);
+
+        Task<IEnumerable<Vehicle>> GetVehiclesAsync();
         //
 
         //block 2

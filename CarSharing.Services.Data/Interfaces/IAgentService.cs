@@ -7,6 +7,7 @@
         //both async
         Task<bool> AgentExistByIdAsync(string agentId);
         Task<bool> AgentExistByUserIdAsync(string userId);
+        Task<string> GetAgentIdByUserIdAsync(string userId);
         //
     }
 }

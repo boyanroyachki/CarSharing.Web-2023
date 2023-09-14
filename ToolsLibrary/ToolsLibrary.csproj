@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Selenium.WebDriver" Version="4.12.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BrowserBot\BrowserBots.csproj" />
+    <ProjectReference Include="..\CarSharing.Common\CarSharing.Common.csproj" />
+  </ItemGroup>
+
 </Project>

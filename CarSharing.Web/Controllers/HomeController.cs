@@ -9,7 +9,7 @@ namespace CarSharing.Web.Controllers
 {
     public class HomeController : BaseController
     {
-        public HomeController(IVehicleService vehicleService) : base(vehicleService) { }
+        public HomeController(IVehicleService vehicleService, IAgentService agentService) : base(vehicleService, agentService) { }
         
         public async Task<IActionResult> Index()
         {
@@ -21,6 +21,7 @@ namespace CarSharing.Web.Controllers
             }
             return View();
         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

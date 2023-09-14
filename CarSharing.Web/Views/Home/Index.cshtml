@@ -2,7 +2,17 @@
     ViewData["Title"] = "Home Page";
 }
 
+<body onload="getLocation()">
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+    <div>
+        <p>Latitude: <span id="latitude"></span></p>
+        <p>Longitude: <span id="longitude"></span></p>
+    </div>
+        
+
+</body>
+
